@@ -10,20 +10,25 @@
 <body>
 <h1 class="title-h1">App Json Maker</h1>
     <div class="inputs">
-    Name :<input type="text" id="input-name"> <br>
-    Bundle ID :<input type="text" id="input-bundle-id"> <br>
-    Developer :<input type="text" id="input-developer"> <br>
-    Version :<input type="text" id="input-version"> <br>
-    Date :<input type="text" id="input-date"> <br>
-    Desscription :<input type="text" id="input-description"> <br>
-    Download URL:<input size="50" class="input-url" type="url" id="input-download-url"> <br>
-    Localized Desscription :<input type="text" id="input-localized-description"> <br>
-    icon URL :<input size="50" type="url" id ="input-icon-url"> <br>
-    Size :<input type="text" id="input-size"><br>
+    Name :<input placeholder="My App" type="text" id="input-name"> <br>
+    Bundle ID :<input placeholder="com.example.app" type="text" id="input-bundle-id"> <br>
+    Developer :<input placeholder="Company inc" type="text" id="input-developer"> <br>
+    Version :<input placeholder="1.0.0" type="text" id="input-version"> <br>
+    Date : Year<input placeholder="xxxx" size="5" type="text" id="input-year"> 
+    Month<input placeholder="xx" size="3" type="text" id="input-month">
+    Day <input placeholder="xx" size="3" type="text" id="input-day">
+    Time <input placeholder="00:00:00" size="8" type="text" id="input-time"><br>
+    Desscription :<input placeholder="app description" type="text" size="50" id="input-description"> <br>
+    Download URL:<input placeholder="https://example.com/app.ipa" size="50" class="input-url" type="url" id="input-download-url"> <br>
+    Localized Desscription :<input placeholder="Localized Description" type="text" size="50" id="input-localized-description"> <br>
+    icon URL :<input placeholder="https://example.com/app.png" size="50" type="url" id ="input-icon-url"> <br>
+    Size :<input placeholder="MegaBytes" type="text" id="input-size"><br>
     <button type="submit" id="submit">Create</button>
     </div>
 <h1 class="title-h1">Result</h1>
-    <p id="result" >Result Here</p>
+    <div class="box">
+        <p id="result" >Result Here</p>
+    </div>
 <button id="copy-button">Copy Result</button>
     <script src="script.js"></script>
 </body>
